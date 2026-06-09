@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+.cinema-header {
+  position: relative;
+  background-color: #7C0A02;
+  border: 10px solid #1a1a1a;
+  padding: 40px 20px 20px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  margin-bottom: 2rem;
+}
+
+.marquee-border {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px solid #D4AF37;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bulb {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #FFFDD0;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #FFFDD0;
+  z-index: 2;
+}
+.bulb-tl { top: 10px; left: 10px; }
+.bulb-tr { top: 10px; right: 10px; }
+.bulb-bl { bottom: 10px; left: 10px; }
+.bulb-br { bottom: 10px; right: 10px; }
+
+.cinema-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: #D4AF37;
+  text-shadow: 3px 3px 0px #000;
+  letter-spacing: 5px;
+  margin: 0;
+  z-index: 10;
+  position: relative;
+}
+
+.cinema-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cinema-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #FFFDD0;
+  margin-top: 10px;
+  z-index: 10;
+  position: relative;
+}
+
+.cinema-nav {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.cinema-nav a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  color: #FFFDD0;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.cinema-nav a:hover {
+  color: #000;
+  background-color: #D4AF37;
+  border-radius: 4px;
+}
