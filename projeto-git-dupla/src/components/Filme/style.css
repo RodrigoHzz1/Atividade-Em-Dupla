@@ -1,0 +1,116 @@
+.filme-card {
+  display: flex;
+  background-color: #1a1a1a;
+  border: 2px solid #D4AF37;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 3rem auto;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  color: #FFFDD0;
+}
+
+.filme-poster {
+  flex: 0 0 300px; /* Mantém a largura da imagem fixa em 300px */
+}
+
+.filme-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.filme-info {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filme-cabecalho {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.filme-titulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  color: #D4AF37;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.filme-ano {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  color: #7C0A02;
+  background-color: #FFFDD0;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.filme-genero {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.filme-lore-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #D4AF37;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.filme-historia {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  text-align: justify;
+}
+
+.filme-btn-trailer {
+  margin-top: 2rem;
+  align-self: flex-start;
+  background-color: transparent;
+  color: #D4AF37;
+  border: 2px solid #D4AF37;
+  padding: 10px 25px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filme-btn-trailer:hover {
+  background-color: #D4AF37;
+  color: #1a1a1a;
+}
+
+/* Para ficar bonito no telemóvel */
+@media (max-width: 768px) {
+  .filme-card {
+    flex-direction: column;
+    margin: 2rem 1rem;
+  }
+  .filme-poster {
+    flex: auto;
+  }
+  .filme-poster img {
+    height: 400px;
+  }
+  .filme-titulo {
+    font-size: 2.5rem;
+  }
+}
