@@ -1,27 +1,30 @@
-import './style.css';
+import React from 'react';
+import './style.css'; // Aponta para o css da própria pasta Header
 
 export default function Header() {
   return (
-    <header className="cinema-header">
-      {/* Decorações do Letreiro */}
-      <div className="marquee-border"></div>
-      <div className="bulb bulb-tl"></div>
-      <div className="bulb bulb-tr"></div>
-      <div className="bulb bulb-bl"></div>
-      <div className="bulb bulb-br"></div>
-
-      {/* Títulos */}
-      <h1 className="cinema-title">
-        <a href="/">CINE LORE</a>
-      </h1>
-      <p className="cinema-subtitle">"Aonde as histórias ganham vida. Explore a lore do cinema."</p>
+    <nav className="cinelore-navbar">
       
-      {/* Menu */}
-      <nav className="cinema-nav">
-        <a href="/">SUCESSOS</a>
-        <a href="/filmes">FILMES</a>
-        <a href="/sobre-nos">BASTIDORES</a>
-      </nav>
-    </header>
+      {/* Esquerda: Identidade do site */}
+      <div className="navbar-logo">
+        <span className="logo-cine">CINE</span>
+        <span className="logo-lore">LORE</span>
+      </div>
+
+      {/* Centro: Abas de navegação */}
+      <div className="navbar-links">
+        <a href="#em-cartaz" className="nav-item">EM CARTAZ</a>
+        <a href="#filmes" className="nav-item">FILMES</a>
+        <a href="#bastidores" className="nav-item">BASTIDORES</a>
+        <a href="#noticias" className="nav-item">NOTÍCIAS</a>
+      </div>
+
+      {/* Direita: Pesquisa e Login */}
+      <div className="navbar-actions">
+        <button className="btn-busca-retro">🔍</button>
+        <button className="btn-entrar-retro">ENTRAR</button>
+      </div>
+
+    </nav>
   );
 }
