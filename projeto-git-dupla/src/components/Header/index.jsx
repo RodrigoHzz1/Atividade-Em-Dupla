@@ -18,7 +18,7 @@ export default function Header() {
       
       {/* Menu */}
       <nav className="cinema-nav">
-        <a href="/">EM CARTAZ</a>
+        <a href="/">SUCESSOS</a>
         <a href="/filmes">FILMES</a>
         <a href="/sobre-nos">BASTIDORES</a>
       </nav>
