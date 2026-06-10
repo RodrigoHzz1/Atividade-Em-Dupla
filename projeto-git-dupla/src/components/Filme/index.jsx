@@ -4,9 +4,9 @@ export default function Filme() {
   return (
     <section className="filme-card">
       <div className="filme-poster">
-        {/* Usando uma imagem de exemplo de um clássico do cinema */}
+        {/* O "h" extra foi removido do link abaixo! */}
         <img 
-          src="https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5OUcvUUy.jpg" 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamESVO3V1PvgRf2-GQXYHUR8BiBcrIkgJ2g&s" 
           alt="Pôster do Filme" 
         />
       </div>
