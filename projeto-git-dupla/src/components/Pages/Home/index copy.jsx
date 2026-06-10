@@ -1,6 +1,9 @@
 import React from 'react';
 import './style.css';
 
+// Link direto da imagem do filme Nós (Us) para o pôster carregar certinho
+const capaUs = "https://m.media-amazon.com/images/M/MV5BZTliNWJhM2UtNDM3NC00YTU1LWIyY2UxYjFmY2U4NWFlYjhkXkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_.jpg";
+
 export default function Home() {
   return (
     <div className="home-container">
@@ -8,10 +11,9 @@ export default function Home() {
       {/* Bloco Único do Filme Nós (Us) */}
       <div className="filme-card-layout">
         
-        {/* Lado Esquerdo: Imagem do Pôster vinda da pasta public */}
+        {/* Lado Esquerdo: Imagem do Pôster */}
         <div className="card-foto-box">
-          {/* Como o arquivo está na pasta public, o caminho começa direto com / */}
-          <img src="/filme-us.jpg" alt="Pôster do filme Nós (Us)" />
+          <img src={capaUs} alt="Pôster do filme Nós (Us)" />
         </div>
 
         {/* Lado Direito: Informações e Texto */}

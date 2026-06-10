@@ -1,0 +1,56 @@
+.services-container {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 60px 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.services-header {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
+
+.services-header p {
+  color: #cccccc;
+  font-style: italic;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #161616;
+  border: 1px solid #b8860b; /* Borda dourada discreta */
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 280px;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
