@@ -3,18 +3,42 @@ import './style.css';
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container" style={{ flexDirection: 'column', gap: '40px' }}>
       
-      {/* Bloco Único do Filme Nós (Us) */}
+      {/* --- PRIMEIRO FILME: O Poderoso Chefão --- */}
       <div className="filme-card-layout">
-        
-        {/* Lado Esquerdo: Imagem do Pôster vinda da pasta public */}
         <div className="card-foto-box">
-          {/* Como o arquivo está na pasta public, o caminho começa direto com / */}
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamESVO3V1PvgRf2-GQXYHUR8BiBcrIkgJ2g&s" 
+            alt="Pôster do Filme O Poderoso Chefão" 
+          />
+        </div>
+        
+        <div className="card-info-box">
+          <div className="card-header-layout">
+            <h2 className="card-titulo-texto">O PODEROSO CHEFÃO</h2>
+            <span className="card-ano-badge">1972</span>
+          </div>
+          
+          <p className="card-genero-texto">Crime • Drama • Clássico</p>
+          
+          <h3 className="card-lore-titulo">A Lore</h3>
+          <hr className="card-divisor-linha" />
+          
+          <p className="card-descricao-texto">
+            O patriarca de uma dinastia do crime organizado transfere o controle de seu império clandestino para seu filho relutante. Uma história épica sobre poder, família e traição, que mergulha fundo nas raízes da máfia ítalo-americana e nos sacrifícios exigidos para manter o legado vivo.
+          </p>
+          
+          <button className="btn-trailer-acao">VER ELENCO</button>
+        </div>
+      </div>
+
+      {/* --- SEGUNDO FILME: Nós (Us) --- */}
+      <div className="filme-card-layout">
+        <div className="card-foto-box">
           <img src="/filme-us.jpg" alt="Pôster do filme Nós (Us)" />
         </div>
 
-        {/* Lado Direito: Informações e Texto */}
         <div className="card-info-box">
           <div className="card-header-layout">
             <h2 className="card-titulo-texto">NÓS (US)</h2>
@@ -27,15 +51,11 @@ export default function Home() {
           <hr className="card-divisor-linha" />
           
           <p className="card-descricao-texto">
-            Uma família tranquila viaja para passar as férias na praia, mas o descanso é 
-            interrompido quando um grupo de pessoas idênticas a eles aparece na frente da casa. 
-            Presos em um pesadelo angustiante, eles precisam lutar pela sobrevivência contra suas 
-            próprias versões malignas que partilham de uma mesma alma corrompida.
+            Uma família tranquila viaja para passar as férias na praia, mas o descanso é interrompido quando um grupo de pessoas idênticas a eles aparece na frente da casa. Presos em um pesadelo angustiante, eles precisam lutar pela sobrevivência contra suas próprias versões malignas que partilham de uma mesma alma corrompida.
           </p>
           
-          <button className="btn-trailer-acao">VER TRAILER</button>
+          <button className="btn-trailer-acao">VER ELENCO</button>
         </div>
-
       </div>
 
     </div>
